@@ -93,3 +93,5 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'  # Collect static files here
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = ["*"]
