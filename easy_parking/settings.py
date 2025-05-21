@@ -22,11 +22,15 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
+DOWNLOAD_APPS = [
+    'rest_framework',
+]
+
 LOCAL_APPS = [
     'models',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
+INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + DOWNLOAD_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
