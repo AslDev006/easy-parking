@@ -24,13 +24,14 @@ DJANGO_APPS = [
 
 DOWNLOAD_APPS = [
     'rest_framework',
+    'drf_yasg',
 ]
 
 LOCAL_APPS = [
     'models',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + DOWNLOAD_APPS
+INSTALLED_APPS = DJANGO_APPS +  DOWNLOAD_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
