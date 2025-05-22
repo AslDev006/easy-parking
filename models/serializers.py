@@ -223,7 +223,6 @@ class BookingWriteSerializer(serializers.ModelSerializer):  # Variant 3 - Yozish
         parking_zone_changed = (old_parking_zone != new_parking_zone_from_data)
 
         if parking_zone_changed:
-            # validate_parking_zone da yangi joy uchun tekshirilgan
             pass
 
         updated_instance = super().update(instance, validated_data)
